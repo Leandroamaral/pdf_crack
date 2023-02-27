@@ -14,12 +14,12 @@ class ThreadPwd(threading.Thread):
         self.pwd = pwd
 
     def run(self):
-        log_file = open('pwd_thread_log.txt', 'w')
+        log_file = open('pwd_thread_log.txt', 'a')
         if self.pwd == None:
             raise ValueError("No password to check")
         while True:
             try:
-                log_file.write("attempted " + self.pwd + '\n')
+                log_file.write("attempted :" + self.pwd + '\n')
                 decrypt_result = self.pdf.decrypt(self.pwd)
                 break
             except PyPDF2.utils.PdfReadError:

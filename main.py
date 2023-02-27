@@ -161,7 +161,7 @@ while True:
         min_spaces = int(input("Enter the minimum size of password to check."))
         max_spaces = int(input("Enter the maximum size of password to check."))
         print()
-        if min_spaces < max_spaces:
+        if min_spaces <= max_spaces:
             max_spaces += 1
             break
         print("Maximum password size must be larger than minimum size. Please enter again.")

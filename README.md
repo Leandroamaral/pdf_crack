@@ -6,7 +6,7 @@ This is for education only, and may not work on all .pdf files.
 
 Written in python 3.5.1
 
-## installation
+## Installation
 
 - Install python 3.5 (newer version dosent work)
 - Clone git
